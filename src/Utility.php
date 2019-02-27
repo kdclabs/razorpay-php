@@ -47,11 +47,11 @@ class Utility
         // Use lang's built-in hash_equals if exists to mitigate timing attacks
         if (function_exists('hash_equals'))
         {
-            $verified = hash_equals((string)$expectedSignature, $actualSignature);
+            $verified = hash_equals((string)$expectedSignature, (string)$actualSignature);
         }
         else
         {
-            $verified = $this->hashEquals((string)$expectedSignature, $actualSignature);
+            $verified = $this->hashEquals((string)$expectedSignature, (string)$actualSignature);
         }
 
         if ($verified === false)
