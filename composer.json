@@ -1,5 +1,5 @@
 {
-    "name": "razorpay/razorpay",
+    "name": "rzp/rzp-php",
     "description": "Razorpay PHP Client Library",
     "keywords": ["razorpay", "api", "php", "client"],
     "authors": [
